@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.background{
+  background-image: url("./Images/profile-pic.png");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+ul li{
+  padding: 4px;
+}
