@@ -1,9 +1,10 @@
 import './App.css';
+import profilePic from './Images/profile-pic.png';
 
 function App() {
   return (
     <div className="bg-gray-200 flex h-screen">
-      <div className="bg-white w-2/4 flex justify-center items-center">
+      <div className="bg-white w-8/12 flex justify-center items-center">
         <div className="w-3/4">
           <h2 className="font-bold font-sans text-4xl">HI THERE!</h2>
           <h1 className="font-serif text-5xl"><b>I'M</b> GERRY VIEN</h1>
@@ -18,9 +19,8 @@ function App() {
           </button>
         </div>
       </div>
-      <div className='w-2/4'>
-        <h1>Sample</h1>
-      </div>
+      
+      <img src={profilePic} alt="Profile Picture" className="w-4/12"/>
     </div>
   );
 }
