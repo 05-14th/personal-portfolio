@@ -1,14 +1,14 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faImage, faFolder, faContactCard } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import About from './About'; // Import your About component
 
 function App() {
 
   const handleClick = () => {
     console.log('Button clicked!');
-    // You can add your desired functionality here
+    
   };
 
   return (
@@ -35,7 +35,7 @@ function App() {
               <Link to="/" className="text-white"><FontAwesomeIcon icon={faHome} size="lg"/></Link>
             </li>
             <li>
-              <Link to='/about' className='hover:text-white'><FontAwesomeIcon icon={faUser} size="lg"/></Link>
+              <Link to='about' className='hover:text-white'><FontAwesomeIcon icon={faUser} size="lg"/></Link>
             </li>
             <li>
               <Link to='/' className='hover:text-white'><FontAwesomeIcon icon={faBriefcase}  size="lg"/></Link>
@@ -53,9 +53,10 @@ function App() {
         </div>
       </div>
 
-      <Switch>
-        <Route path="/about" component={About} />
-      </Switch>
+      <Routes>
+        <Route path="/" component={App} />
+        <Route path="about" element={About} />
+      </Routes>
     </Router>
   );
 }

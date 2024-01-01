@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faImage, faFolder, faContactCard } from '@fortawesome/free-solid-svg-icons';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
-function App() {
+function About() {
 
   const handleClick = () => {
     console.log('Button clicked!');
@@ -43,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default About;
