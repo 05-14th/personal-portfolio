@@ -1,25 +1,23 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faImage, faFolder, faContactCard } from '@fortawesome/free-solid-svg-icons';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import About from './About'; // Import your About component
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import About from './About';
 
-function App() {
+function Home() {
 
   const handleClick = () => {
     console.log('Button clicked!');
-    
   };
 
   return (
-    <Router>
       <div className="bg-gray-200 flex h-screen">
         <div className="bg-white w-3/5 flex justify-center items-center">
           <div className="w-3/4 max-h-full overflow-y-auto">
             <h2 className="font-bold font-sans text-4xl">HI THERE!</h2>
             <h1 className="font-serif text-5xl"><b>I'M</b> GERRY VIEN</h1>
             <div className="bg-yellow-500">
-              <h4 className="font-sans font-bold text-white text-center">FULL STACK WEB AND SOFTWARE DEVELOPER</h4>
+              <h4 className="font-sans font-bold text-white text-center">FULL-STACK DEVELOPER </h4>
             </div>
             <p className="text-justify">
               I'm Gerry Vien Flores, a dedicated software and web developer passionate about continuous learning in tech. I thrive on challenges, from tech competitions to commissioned projects, seeing them not just as hobbies but integral to my career growth. My proactive approach ensures I stay adept in the ever-evolving tech landscape.
@@ -52,12 +50,18 @@ function App() {
           </ul>
         </div>
       </div>
+  );
+}
 
+function App(){
+  return(
+    
+    <BrowserRouter>
       <Routes>
-        <Route path="/" component={App} />
-        <Route path="about" element={About} />
+        <Route path="/" element={<Home/>} />
+        <Route path="about" element={<About/>} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
