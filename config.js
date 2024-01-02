@@ -1,4 +1,4 @@
-const admin = require('firebase-admin');
+const admin = require('firebase-admin'); //Import firebase-admin module
 
 const serviceAccount = require('./personal-portfolio-c3523-firebase-adminsdk-rawu9-c1a25affb5.json'); // Replace with the path to your service account key file
 
