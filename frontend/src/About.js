@@ -2,6 +2,7 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faBriefcase, faImage, faFolder, faContactCard } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import profilePic from './Images/profile-pic.png';
 
 function calculateAge(dateOfBirth){
   const currentDate = new Date();
@@ -17,10 +18,27 @@ function About() {
   const age = calculateAge(birthdate);
   return (
       <div className="bg-gray-200 flex h-screen">
-        <div className="bg-white background w-5/12">
-          
+        <div className=" w-4/12  bg-yellow-500">
+          <img src={profilePic} alt='Profile Picture' className='bg-white'></img>
+          <ul className="m-4 p-2 rounded-md text-center font-sans font-semibold">
+            <li>
+              <Link to="/" className="hover:text-white">HOME</Link>
+            </li>
+            <li>
+              <Link to='#' className='text-white'>ABOUT</Link>
+            </li>
+            <li>
+              <Link to='/' className='hover:text-white'>RESUME</Link>
+            </li>
+            <li>
+              <Link to='/' className='hover:text-white'>PORTFOLIO</Link>
+            </li>
+            <li>
+              <Link to='/' className='hover:text-white'>CONTACT</Link>
+            </li>
+          </ul>
         </div>
-        <div className="w-6/12">
+        <div className="w-7/12">
           <h1 className="border border-solid border-black text-center font-sans font-bold">ABOUT ME</h1>
           <h3>I'm <b>Gerry Vien Flores,</b> Full-Stack Developer</h3>
           <p>
@@ -35,13 +53,10 @@ function About() {
               <Link to="/" className="hover:text-white"><FontAwesomeIcon icon={faHome} size="lg"/></Link>
             </li>
             <li>
-              <Link to='/' className='text-white'><FontAwesomeIcon icon={faUser} size="lg"/></Link>
+              <Link to='#' className='text-white'><FontAwesomeIcon icon={faUser} size="lg"/></Link>
             </li>
             <li>
               <Link to='/' className='hover:text-white'><FontAwesomeIcon icon={faBriefcase}  size="lg"/></Link>
-            </li>
-            <li>
-              <Link to='/' className='hover:text-white'><FontAwesomeIcon icon={faImage} size="lg"/></Link>
             </li>
             <li>
               <Link to='/' className='hover:text-white'><FontAwesomeIcon icon={faFolder} size="lg"/></Link>
