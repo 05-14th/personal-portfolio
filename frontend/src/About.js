@@ -18,9 +18,9 @@ function About() {
   const age = calculateAge(birthdate);
   return (
       <div className="bg-gray-200 flex h-screen">
-        <div className=" w-4/12  bg-yellow-500">
-          <img src={profilePic} alt='Profile Picture' className='bg-white'></img>
-          <ul className="m-4 p-2 rounded-md text-center font-sans font-semibold">
+        <div className=" bg-yellow-500">
+          <img src={profilePic} alt='Profile Picture' className="h-1/2 bg-white"></img>
+          <ul className="m-4 p-2 rounded-md text-center font-sans font-semibold h-1/2 font">
             <li>
               <Link to="/" className="hover:text-white">HOME</Link>
             </li>
@@ -38,7 +38,7 @@ function About() {
             </li>
           </ul>
         </div>
-        <div className="w-7/12">
+        <div className="w-10/12 p-5">
           <h1 className="border border-solid border-black text-center font-sans font-bold">ABOUT ME</h1>
           <h3>I'm <b>Gerry Vien Flores,</b> Full-Stack Developer</h3>
           <p>
@@ -46,8 +46,30 @@ function About() {
             a project, I usually do both the frontend and the backend side of the software or website. In terms of working, I am a freelancer that 
             accepts commissioned projects in order to gain additional experience while learning through the curriculum and to earn some money as well.
           </p>
+          <div className="bg-black">
+            <div className='flex'>
+              <div className="w-1/2 h-1/2 p-10 text-center">
+                <h1 className='text-yellow-500'>5k</h1>
+                <h3 className='text-white'>Completed Projects</h3>
+              </div>
+              <div className="w-1/2 h-1/2 p-10 text-center">
+                <h1 className='text-yellow-500'>5k</h1>
+                <h3 className='text-white'>Satisfied Clients</h3>
+              </div>
+            </div>
+            <div className='flex'>
+              <div className="w-1/2 h-1/2 p-10 text-center">
+                <h1 className='text-yellow-500'>5k</h1>
+                <h3 className='text-white'>Years Experience</h3>
+              </div>
+              <div className="w-1/2 h-1/2 p-10 text-center">
+                <h1 className='text-yellow-500'>5k</h1>
+                <h3 className='text-white'>Followers</h3>
+              </div>
+            </div>
+          </div>
         </div> 
-        <div className="w-1/12 flex justify-end items-center">
+        <div className="flex justify-end items-center">
           <ul className="m-4 bg-yellow-500 p-2 rounded-md">
             <li>
               <Link to="/" className="hover:text-white"><FontAwesomeIcon icon={faHome} size="lg"/></Link>
