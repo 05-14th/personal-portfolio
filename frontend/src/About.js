@@ -28,7 +28,7 @@ function About() {
               <Link to='#' className='text-white'>ABOUT</Link>
             </li>
             <li>
-              <Link to='/' className='hover:text-white'>RESUME</Link>
+              <Link to='#' className='hover:text-white'>RESUME</Link>
             </li>
             <li>
               <Link to='/' className='hover:text-white'>PORTFOLIO</Link>
