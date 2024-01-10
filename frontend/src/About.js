@@ -46,26 +46,31 @@ function About() {
             a project, I usually do both the frontend and the backend side of the software or website. In terms of working, I am a freelancer that 
             accepts commissioned projects in order to gain additional experience while learning through the curriculum and to earn some money as well.
           </p>
-          <div className="bg-black">
-            <div className='flex'>
-              <div className="w-1/2 h-1/2 p-10 text-center">
-                <h1 className='text-yellow-500'>5k</h1>
-                <h3 className='text-white'>Completed Projects</h3>
+          <div className="flex">
+            <div className="bg-black w-7/12">
+              <div className='flex'>
+                <div className="w-1/2 h-1/2 p-10 text-center">
+                  <h1 className='text-yellow-500'>5k</h1>
+                  <h3 className='text-white'>Completed Projects</h3>
+                </div>
+                <div className="w-1/2 h-1/2 p-10 text-center">
+                  <h1 className='text-yellow-500'>5k</h1>
+                  <h3 className='text-white'>Satisfied Clients</h3>
+                </div>
               </div>
-              <div className="w-1/2 h-1/2 p-10 text-center">
-                <h1 className='text-yellow-500'>5k</h1>
-                <h3 className='text-white'>Satisfied Clients</h3>
+              <div className='flex'>
+                <div className="w-1/2 h-1/2 p-10 text-center">
+                  <h1 className='text-yellow-500'>5k</h1>
+                  <h3 className='text-white'>Years Experience</h3>
+                </div>
+                <div className="w-1/2 h-1/2 p-10 text-center">
+                  <h1 className='text-yellow-500'>5k</h1>
+                  <h3 className='text-white'>Followers</h3>
+                </div>
               </div>
-            </div>
-            <div className='flex'>
-              <div className="w-1/2 h-1/2 p-10 text-center">
-                <h1 className='text-yellow-500'>5k</h1>
-                <h3 className='text-white'>Years Experience</h3>
-              </div>
-              <div className="w-1/2 h-1/2 p-10 text-center">
-                <h1 className='text-yellow-500'>5k</h1>
-                <h3 className='text-white'>Followers</h3>
-              </div>
+            </div>  
+            <div className='w-5/12'>
+              <h3 className='text-center font-bold'>What I Do?</h3>
             </div>
           </div>
         </div> 
