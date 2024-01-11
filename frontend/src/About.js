@@ -1,6 +1,6 @@
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faBriefcase, faImage, faFolder, faContactCard } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faBriefcase, faLaptopCode, faFolder, faContactCard} from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import profilePic from './Images/profile-pic.png';
 
@@ -47,7 +47,7 @@ function About() {
             accepts commissioned projects in order to gain additional experience while learning through the curriculum and to earn some money as well.
           </p>
           <div className="flex">
-            <div className="bg-black w-7/12">
+            <div className="bg-black w-7/12 m-2">
               <div className='flex'>
                 <div className="w-1/2 h-1/2 p-10 text-center">
                   <h1 className='text-yellow-500'>5k</h1>
@@ -69,8 +69,16 @@ function About() {
                 </div>
               </div>
             </div>  
-            <div className='w-5/12'>
+            <div className='w-5/12 m-2'>
               <h3 className='text-center font-bold'>What I Do?</h3>
+              <div className='flex'>
+                <i><FontAwesomeIcon icon={faLaptopCode} size='5x'/></i>
+                
+              </div>
+              <div className='flex'>
+                <i><FontAwesomeIcon icon={faLaptopCode} size='5x'/></i>
+                
+              </div>
             </div>
           </div>
         </div> 
